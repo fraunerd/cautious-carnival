@@ -1,18 +1,50 @@
 <html>
-<head><title>ProcrasTimer</title>
-  <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="fa/css/font-awesome.min.css"></head>
+
+<head>
+    <title>ProcrasTimer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fa/css/font-awesome.min.css">
+    <link rel="stylesheet" href="skeleton/css/skeleton.css">
+
+</head>
+
 <body>
-  <div align="center">
-  <h1>The ProcrasTimer</h1>
-  <div class="whatwhat"><p  id="whatwhat">If it's red, you have to work. If it's green, procrastinate!</p></div>
-<div class="timer"><p id="time">10:00</p></div>
-<button id="start" onclick="startClick()"><i class="fa fa-5x fa-play" aria-hidden="true"></i></button>
-<button id="pause" onclick="pauseClick()"><i class="fa fa-5x fa-pause" aria-hidden="true"></i></button>
-<p id="instructions" class="inst">10 minutes of work, 2 minutes of play. In an endless circle. <br/>
-  Fighting procrastination one phase at a time.</p></div>
-     <script src='jquery.js'></script>
-     <script src='procrastimer.js'></script>
-</div>
+    <div class "container" align="center">
+        <div class="primary">
+            <div class="row dark">&nbsp;</div>
+            <div class="row primary">
+                <div class="two columns">&nbsp;</div>
+                <div class="eight columns">
+                    <h1>ProcrasTim</h1></div>
+            </div>
+            <div class="row">
+                <div class="two columns">&nbsp;</div>
+                <div class="eight columns" align="center">
+                    <p><em>10 minutes of work, 2 minutes of play.</em></p>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="two columns">&nbsp;</div>
+            <div class="eight columns" align="center">
+                <h3><p id="time" class="timer">10:00</h3></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="two columns">&nbsp;</div>
+            <div class="eight columns" align="center">
+                <button id="start" class="button-primary lesspad" onclick="startClick()"><i class="fa fa-3x fa-play" aria-hidden="true"></i></button>
+                <button id="pause" class="button-primary lesspad" onclick="pauseClick()"><i class="fa fa-3x fa-pause" aria-hidden="true"></i></button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="two columns">&nbsp;</div>
+            <div class="eight columns morepad"><a href="how.html"><i class="fa fa-5x fa-info-circle" padding="10px" aria-hidden="true"></i></a></div>
+        </div>
+        <script src='jquery.js'></script>
+        <script src='procrastimer.js'></script>
+    </div>
 </body>
+
 </html>

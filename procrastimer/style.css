@@ -1,4 +1,4 @@
-.timer{
+/*.timer{
   font-size:34pt; margin:10px; padding:10px;
 }
 
@@ -24,4 +24,55 @@ color: #FFF;
 padding:15px;
 border-radius:5px;
 
+}
+*/
+h1{
+  margin-bottom:7px !important;
+}
+
+.lesspad {
+  padding:0 15px;
+  text-align:center;
+}
+
+button{
+  background-color: #009688 !important;
+  border-color: #009688 !important;
+}
+
+.dark{
+  background-color: #303F9F !important;
+  color: #FFF !important;
+  width:100%!important;
+}
+
+.primary{
+  background-color: #3F51B5 !important;
+  color:#FFF !important;
+  width:100% !important;
+}
+
+.timer{
+  padding:20px;
+  margin-top:25px;
+}
+
+.white{
+  color:#FFF !important;
+}
+
+.small{
+  font-size:0.8em;
+}
+
+a {
+  color:#303F9F !important;
+}
+
+a:hover {
+  color:#3F51B5  !important;
+}
+
+.morepad{
+  padding:40px;
 }

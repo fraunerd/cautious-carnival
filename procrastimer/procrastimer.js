@@ -22,7 +22,7 @@ function startTimer(total) {
             startTimer(2*60);
           $('#time').css({"background-color":"#4CAF50", "color":"#FFF"});
           $('#whatwhat').css("color","#4CAF50");
-          $('#whatwhat').text("Procrastinate!! Wheeeeee!");}
+          $('#whatwhat').text("Procrastinate! Wheeeeee!");}
 
           else {
             clearInterval(thistimer);
@@ -49,7 +49,7 @@ function startTimer(total) {
         };
         var mins = 60 * 10;
         startTimer(mins);
-        $('#start').html("<i class=\"fa fa-5x fa-refresh\" aria-hidden=\"true\"></i>");
+        $('#start').html("<i class=\"fa fa-3x fa-refresh\" aria-hidden=\"true\"></i>");
         isStarted = true;
         $('#time').css({"background-color": "#D32F2F", "color":"#FFF"});
         $('#whatwhat').css("color", "#D32F2F");
@@ -59,9 +59,26 @@ function startTimer(total) {
     function pauseClick() {
         if (paused == true) {
             paused = false;
-            $('#pause').html("<i class=\"fa fa-5x  fa-pause\" aria-hidden=\"true\"></i>");
+            $('#pause').html("<i class=\"fa fa-3x  fa-pause\" aria-hidden=\"true\"></i>");
         } else {
             paused = true;
-            $('#pause').html("<i class=\"fa fa-5x fa-play\" aria-hidden=\"true\"></i>");
+            $('#pause').html("<i class=\"fa fa-3x fa-play\" aria-hidden=\"true\"></i>");
         }
     };
+
+
+    //define tab or click event type on rool level (can be combined with modernizr)
+    iaEvent = "click";
+    if (typeof navigator !== "undefined" && navigator.app) {
+       iaEvent = "tap";
+    }
+    $('.ext-link').each.bind(iaEvent, function() {
+        if (typeof navigator !== "undefined" && navigator.app) {
+            // Mobile device.
+            var linktarget = this.attr("href");
+            navigator.app.loadUrl(linktarget, {openExternal: true});
+        } else {
+            // Possible web browser
+            window.open(linktarget, "_blank");
+        }
+    });

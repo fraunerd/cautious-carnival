@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns   = "http://www.w3.org/ns/widgets"
     xmlns:gap   = "http://phonegap.com/ns/1.0"
-    id          = "de.fraunerd.procrastimer"
-    version     = "0.0.5" >
+    id          = "de.fraunerd.procrastim"
+    version     = "0.0.9" >
 
 <!-- versionCode is optional and Android only -->
-
-  <name>ProcrasTimer</name>
+<icon src="icon.png"/>
+  <name>ProcrasTim</name>
 
   <description>
-      A procrastination timer. 10 minutes of work, 2 minutes of play. An endless circle.
+      A procrastination timer. 10 minutes of work, 2 minutes of play.
   </description>
 
   <author href="http://www.fraunerd.de" email="doro@fraunerd.de">
       Frau Nerd
   </author>
-
 </widget>
